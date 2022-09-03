@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akbank Web3 Practicum</title>
+</head>
+
+<body style="background: #f1f2f6;">
+    <div class="navbar">
+        <div class="navbar-left">AKBANK</div>
+        <div class="navbar-right">Web3 Practicum - Patika</div>
+    </div>
+    <div class="container">
+        <h2 style="color: blue;" >Javascript Case</h2>
+        <form>
+            <div class="form-group">
+                <label>Please enter a number:</label>
+                <input type="text" class="form-control" id="number">
+            </div>
+            <div class="form-group">
+                <label>Sum of the Figure:</label>
+                <input type="text" class="form-control" id="sumOf" disabled>
+            </div>
+
+            <div class="form-group">
+
+                <label>Odd or Even:</label>
+                <input type="text" class="form-control" id="Result" disabled>
+
+            </div>
+            <button id="calculate" type="button" class="btn btn-primary">Calculate</button>
+        </form>
+    </div>
+
+    <script>
+        var number = document.querySelector("#number");
+        var result = document.querySelector("#result");
+        var calculate = document.querySelector("#calculate");
+
+        calculate.onclick = function () {
+            var quantity = 0, sum = 0;
+            var num = Number(number.value);
+            console.log(num);
+            while (num != 0) {
+                sum = (num % 10) + sum;
+                num = Math.floor(num / 10);
+                ++quantity;
+            }
+            sumOf.value = sum;
+
+            if (sum % 2 == 0) {
+                Result.value = "even";
+            }
+            else {
+                Result.value = "odd";
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

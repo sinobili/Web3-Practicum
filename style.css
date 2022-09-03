@@ -1,0 +1,39 @@
+body {
+    margin: 10px;
+}
+
+.navbar{
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left div{
+    
+}
+.navbar-left{
+    padding: 5px;
+    width: 140px;
+    display: flex;
+    background-color: red;
+    font-weight: 900;
+    color: white;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 10px;
+
+}
+.navbar-right{
+    display: flex;
+    align-items: center ;
+}
+
+.container{
+    padding: 10px;
+    margin: 10px;
+}
+.form-group{
+    padding: 2px;
+    margin: 5px;
+}
